@@ -199,6 +199,9 @@ spec:
           DEST_QUAY_URL="quay.io/sign-and-push-to-internal-oci-destination/prod"
         fi
 
+        # OVERRIDE FOR THE SAKE OF TESTING
+        DEST_QUAY_URL="quay.io/rh-ee-semccart/podman-desktop-internal-destination"
+
         MAC_SIGNING_SCRIPT="$(params.macSigningScript)"
         if [[ -z "$MAC_SIGNING_SCRIPT" ]] ; then
           MAC_SIGNING_SCRIPT="/opt/mac_signing_orchestrator.py"
