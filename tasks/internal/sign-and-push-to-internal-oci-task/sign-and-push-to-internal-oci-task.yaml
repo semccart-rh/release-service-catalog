@@ -215,8 +215,8 @@ spec:
         - $(context.taskRun.uid)
         - --dest-quay-url
         - $(params.destQuayURL)
-        - --origin
-        - $(params.origin)
+#        - --origin
+#        - $(params.origin)
         - --mac-signing-script
         - $(params.macSigningScript)
         - --windows-signing-script
