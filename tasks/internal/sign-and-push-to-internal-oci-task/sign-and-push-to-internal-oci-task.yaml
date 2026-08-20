@@ -153,7 +153,7 @@ spec:
   
   steps:
     - name: sign-and-push-to-internal-oci
-      image: quay.io/rh-ee-semccart/release-service-utils:sign-internal-oci-test
+      image: quay.io/rh-ee-semccart/release-service-utils:entitlements-test
       securityContext:
         runAsUser: 1001
       computeResources:
